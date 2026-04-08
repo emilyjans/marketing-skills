@@ -1,0 +1,33 @@
+name: Edit a Skill
+description: Suggest a correction or improvement to an existing listing
+labels: ["edit-request"]
+body:
+  - type: input
+    id: skill-name
+    attributes:
+      label: Which skill?
+      placeholder: seo-audit
+    validations:
+      required: true
+
+  - type: dropdown
+    id: edit-type
+    attributes:
+      label: What kind of edit?
+      options:
+        - Description is wrong or outdated
+        - Category is wrong
+        - Link is broken
+        - Author attribution is incorrect
+        - Skill is no longer available
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-to-change
+    attributes:
+      label: What should change and what should it say instead?
+      description: Be specific. If fixing a link, provide the correct URL.
+    validations:
+      required: true

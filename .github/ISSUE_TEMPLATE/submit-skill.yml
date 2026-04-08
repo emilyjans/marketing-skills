@@ -1,0 +1,119 @@
+name: Submit a Skill
+description: Add a new marketing skill to mktgskills.ai
+labels: ["skill-submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for submitting a skill. We accept free skills (public GitHub repos)
+        and paid skills (purchase or subscription pages). Fill out what applies.
+
+  - type: input
+    id: skill-name
+    attributes:
+      label: Skill name
+      description: Short, hyphenated, lowercase. This is what shows in the directory.
+      placeholder: seo-audit
+    validations:
+      required: true
+
+  - type: input
+    id: access-url
+    attributes:
+      label: Where can people get this skill?
+      description: >
+        GitHub repo URL, purchase page, newsletter link, or download page.
+        This is the link we show users.
+      placeholder: https://github.com/you/repo OR https://yoursite.com/skills
+    validations:
+      required: true
+
+  - type: input
+    id: skill-file-url
+    attributes:
+      label: Direct link to the skill file (free skills only)
+      description: >
+        If your skill is free and public, paste the direct link to the SKILL.md file.
+        Leave blank for paid skills.
+      placeholder: https://github.com/you/repo/blob/main/skill-name/SKILL.md
+
+  - type: dropdown
+    id: access-type
+    attributes:
+      label: How do people access this skill?
+      options:
+        - Free — public GitHub repo
+        - Free — direct download
+        - Paid — one-time purchase
+        - Paid — subscription (monthly or annual)
+        - Paid — community membership
+        - Paid — course or cohort
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - SEO
+        - Content
+        - Copywriting
+        - CRO
+        - Email
+        - Social
+        - Paid Media
+        - Growth
+        - Analytics
+        - Brand
+        - PR & Comms
+        - Product Mktg
+        - Marketing Ops
+        - Video
+        - Affiliate
+        - ASO
+        - Strategy
+    validations:
+      required: true
+
+  - type: input
+    id: author-name
+    attributes:
+      label: Your name or handle
+      description: GitHub username, Twitter handle, or your name — shown as attribution.
+      placeholder: Emily Kramer / @mkt1 / coreyhaines31
+    validations:
+      required: true
+
+  - type: input
+    id: author-url
+    attributes:
+      label: Your profile or website URL
+      placeholder: https://github.com/you OR https://yoursite.com
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Plain-English description
+      description: >
+        One or two sentences. What does this skill help a marketer actually do?
+        No jargon — write it for a non-technical marketer.
+      placeholder: Find out exactly why your site isn't ranking — and get a prioritized list of what to fix, in plain English.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: Users can actually access this skill at the URL provided
+          required: true
+        - label: The skill contains real marketing frameworks, not generic advice
+          required: true
+        - label: I am the author or have permission to list this skill
+          required: true
+        - label: For paid skills — the price and access method is clearly stated on the access page
+          required: false
