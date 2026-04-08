@@ -1,4 +1,4 @@
-# mktgskills-directory
+# marketing-skills
 
 The community skill list behind [mktgskills.ai](https://mktgskills.ai) — 
 the marketing skills directory for AI tools.
