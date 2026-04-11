@@ -134,7 +134,7 @@ Find the install command for any skill at [mktgskills.ai](https://mktgskills.ai)
 
 ---
 
-**[See all 394+ skills at mktgskills.ai →](https://mktgskills.ai)**
+**[See all 461+ skills at mktgskills.ai →](https://mktgskills.ai)**
 
 ---
 
